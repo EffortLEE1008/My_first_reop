@@ -1,5 +1,7 @@
-def say_hello():
-	return 'hellow'
+def say_hello(uname:str)-> str:
+	return f'hellow {uname.lower()}'
 
-if __name__='__main__:
-	print(say_hellow())
+
+if __name__=='__main__':
+    uinput = input('Enter your name: ')
+    print(say_hello(uinput))
