@@ -1,11 +1,8 @@
 def do_fizzbuzz():
     for i in ragne(1,15+1):
-        if i%3==0:
-            print('fizz')
-        elif i%5==0:
-            print('buzz')
-        elif i%15==0:
-            print('fizzbuzz')
+
+        if i%3==0 or i%5 :
+            print('fizz'*(i%3==0)+'buzz'*(i%5==0))
         
         else :
             print(f'{i}')
